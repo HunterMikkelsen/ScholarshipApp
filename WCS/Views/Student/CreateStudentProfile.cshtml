@@ -292,11 +292,20 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
+                            <label asp-for="STEMHighSchoolClubsAndActivitiesHistory" class="control-label"></label>
+                            <input asp-for="STEMHighSchoolClubsAndActivitiesHistory" class="form-control" rows="4" />
+                            <span asp-validation-for="STEMHighSchoolClubsAndActivitiesHistory" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
                             <label asp-for="AwardsHistory" class="control-label"></label>
                             <input asp-for="AwardsHistory" class="form-control" rows="4" />
                             <span asp-validation-for="AwardsHistory" class="text-danger"></span>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label asp-for="CsInterest" class="control-label"></label>
@@ -304,8 +313,6 @@
                             <span asp-validation-for="CsInterest" class="text-danger"></span>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
                             <label asp-for="ScholarshipAidHistory" class="control-label"></label>
@@ -319,9 +326,6 @@
                             <input asp-for="AchievementsHistory" class="form-control" rows="4" />
                             <span asp-validation-for="AchievementsHistory" class="text-danger"></span>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-
                     </div>
                 </div>
             </div>

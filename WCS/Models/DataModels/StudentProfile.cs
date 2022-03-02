@@ -161,6 +161,9 @@ namespace WCS.Models
 
         [Display(Name = "Greatest Achievements")]
         public string AchievementsHistory { get; set; }
+
+        [Display(Name = "STEM High School Clubs/Activities")]
+        public string STEMHighSchoolClubsAndActivitiesHistory { get; set; }
         #endregion
 
 
