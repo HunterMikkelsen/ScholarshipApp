@@ -12,9 +12,10 @@ using WCS.Models;
 namespace WCS.Data.Migrations
 {
     [DbContext(typeof(WcsContext))]
-    partial class WcsContextModelSnapshot : ModelSnapshot
+    [Migration("20220304023155_AddedSTEMinUserProfile")]
+    partial class AddedSTEMinUserProfile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
