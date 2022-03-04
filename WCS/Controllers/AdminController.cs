@@ -656,7 +656,10 @@ namespace WCS.Controllers
         #region Editable Pages
         public IActionResult EditHomePage()
         {
-            var frontPageSetting = _context.Settings.FirstOrDefault(s => s.SettingName.Equals("Front Page Message"));
+			Assistant.GetSettings(SettingName.FrontPageMessage, _context);
+			Assistant.GetSettings(SettingName.HelpPageMessage, _context);
+
+			var frontPageSetting = _context.Settings.FirstOrDefault(s => s.SettingName.Equals("Front Page Message"));
             var appPageSetting = _context.Settings.FirstOrDefault(s => s.SettingName.Equals("HelpPageMessage"));
 
             return View(new EditHomePageViewModel()
