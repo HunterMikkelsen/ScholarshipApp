@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace WCS.Controllers
 {
     [Authorize(Roles = "Administrator, Judge")]
-    public class ScholarshipAwardsController : Controller
+    public class ScholarshipAwardsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
 

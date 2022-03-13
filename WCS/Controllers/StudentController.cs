@@ -16,7 +16,7 @@ namespace WCS.Controllers
 {
 
     [Authorize(Roles = "Student")]
-    public class StudentController : Controller
+    public class StudentController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;

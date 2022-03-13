@@ -12,7 +12,7 @@ namespace WCS.Controllers.API
 {
     [Produces("application/json")]
     [Route("api/Settings")]
-    public class SettingsController : Controller
+    public class SettingsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
 

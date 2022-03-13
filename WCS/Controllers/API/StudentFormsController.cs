@@ -13,7 +13,7 @@ namespace WCS.Controllers
 {
     [Produces("text/plain")]
     [Route("api/StudentForms")]
-    public class StudentFormsController : Controller
+    public class StudentFormsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;

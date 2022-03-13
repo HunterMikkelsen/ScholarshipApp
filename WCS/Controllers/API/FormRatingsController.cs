@@ -17,7 +17,7 @@ namespace WCS.Controllers
     [Produces("application/json")]
     [Route("api/FormRatings")]
     [Authorize(Roles = "Judge, Administrator")]
-    public class FormRatingsController : Controller
+    public class FormRatingsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;

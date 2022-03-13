@@ -15,7 +15,7 @@ using WCS.Models;
 namespace WCS.Controllers
 {
     [Authorize(Roles = "Judge,Administrator")]
-    public class JudgeController : Controller
+    public class JudgeController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;

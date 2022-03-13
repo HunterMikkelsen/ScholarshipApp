@@ -22,7 +22,7 @@ using WCS.Services;
 namespace WCS.Controllers
 {
     [Authorize(Roles = "Administrator")]
-    public class AdminController : Controller
+    public class AdminController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly IEmailSender _emailSender;

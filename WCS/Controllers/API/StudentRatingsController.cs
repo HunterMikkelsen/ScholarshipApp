@@ -13,7 +13,7 @@ namespace WCS.Controllers
 {
     [Produces("application/json")]
     [Route("api/StudentRatings")]
-    public class StudentRatingsController : Controller
+    public class StudentRatingsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;

@@ -10,7 +10,7 @@ using WCS.Models;
 
 namespace WCS.Controllers
 {
-    public class InvitesController : Controller
+    public class InvitesController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
 

@@ -15,7 +15,7 @@ namespace WCS.Controllers
     [Produces("text/plain")]
     [Route("api/Scholarships")]
     //[Authorize(Roles = "Administrator")]
-    public class ScholarshipsController : Controller
+    public class ScholarshipsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
 

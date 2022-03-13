@@ -16,7 +16,7 @@ namespace WCS.Controllers
     [Authorize(Roles = "Administrator")]
     [Produces("text/plain")]
     [Route("api/Forms")]
-    public class FormsController : Controller
+    public class FormsController : Microsoft.AspNetCore.Mvc.Controller
     {
         private readonly WcsContext _context;
         private readonly UserManager<User> _userManager;
