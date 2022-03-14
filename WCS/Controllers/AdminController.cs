@@ -383,7 +383,7 @@ namespace WCS.Controllers
             cycle.Status = CycleStatus.Closed;
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Report/" + cycle.Id);
+            return Redirect("Report/" + cycle.Id);
         }
 
         private bool AwardCycleExists(int id)
