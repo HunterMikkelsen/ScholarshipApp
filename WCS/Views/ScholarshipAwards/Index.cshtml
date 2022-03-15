@@ -30,15 +30,15 @@
         </div>
     }
     <div class="col-md-8">
-        @Html.Partial("_ScholarshipList", Model.Scholarships)
+        <partial name="_ScholarshipList" for="Scholarships"></partial>
     </div>
     <div class="col-md-4">
-        @Html.Partial("_StudentRatings", Model.StudentRatingsListPack)
+        <partial name="_StudentRatings" for="StudentRatingsListPack"></partial>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        @Html.Partial("_ScholarshipAwardsList", Model.AwardsListModel)
+        <partial name="_ScholarshipAwardsList" for="AwardsListModel"></partial>
     </div>
 </div>
 <link rel="stylesheet" href="~/css/wcs.scholarships.css" asp-append-version="true" />
