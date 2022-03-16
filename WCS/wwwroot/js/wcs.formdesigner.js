@@ -102,7 +102,7 @@ $.widget("wcs.formdesigner", {
             .appendTo(this.cmd_save)
             .attr("src", this.imgsave)
             .attr("title", "Save and Exit Form Designer")
-            .addClass("toolbar-image");
+            .addClass("toolbar-image"); 
 
         this.cmd_exit = $("<div class='toolbar-icon-div toolbar-icon-exit'></div>")
             .appendTo(toolbar);
